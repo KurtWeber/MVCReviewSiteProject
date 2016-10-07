@@ -9,6 +9,7 @@ namespace EmployeeReview.Controllers
     public class Department
     {
         public int Id { get; set; }
+        [Display(Name = "Department")]
         public string DepartmentName { get; set; }
     }
 }

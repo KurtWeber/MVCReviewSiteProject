@@ -1,8 +1,22 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+@*<h2>@ViewBag.Title</h2>
+    <h3>@ViewBag.Message</h3>*@
 
-
-<p>This application will help managers manage Employee Reviews</p>
+@*About page Logo *@
+<div class="row">
+    <div class="col-md-6">
+        <img src="~/Images/wecancodeit.png" />
+    </div>
+    <div class="col-md-6" id="contactAlign">
+        @* My information *@
+        <div id="contactMe">
+            <p>Created by Kurt Weber</p>
+            <p>October 7, 2016</p>
+            <p>Software Engineer Apprentice</p>
+        </div>
+        <br />
+        <p>This application will help managers manage their Employee Reviews</p>
+    </div>
+</div>

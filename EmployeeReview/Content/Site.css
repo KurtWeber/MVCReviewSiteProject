@@ -22,3 +22,14 @@ select,
 textarea {
     max-width: 280px;
 }
+#aboutMe {
+    font-family:Century;
+    font-size: 25px;
+    line-height: 22px;
+}
+#contactMe {
+    font-family:Century;
+    font-size: 25px;
+    line-height: 35px;
+    margin-top: 40px
+}
