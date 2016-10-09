@@ -33,3 +33,7 @@ textarea {
     line-height: 35px;
     margin-top: 40px
 }
+/*Tried to create multiple lines*/
+input#Comments.form-control.text-box.single-line {
+    max-width: 660px;
+}
