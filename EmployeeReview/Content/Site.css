@@ -1,4 +1,5 @@
 ﻿body {
+    margin-top: 20px;
     padding-top: 50px;
     padding-bottom: 20px;
 }
@@ -37,3 +38,11 @@ textarea {
 input#Comments.form-control.text-box.single-line {
     max-width: 660px;
 }
+/*Logo border*/
+#picBorder {
+    border-color: black;
+    border: 1px solid;
+    border-radius: 10px;
+    width: auto;
+}
+/*Make some room between image abd Employee Review section*/
