@@ -7,9 +7,11 @@
 <h2>Employee Reviews</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create New", "Create") |
+    @Html.ActionLink("Home", "../Home/Index")
 </p>
-<table class="table">
+<!--Remove header-->
+@*<table class="table">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.DepartmentName.DepartmentName)
@@ -34,6 +36,7 @@
             </th>
             <th></th>
         </tr>
+
 
     @foreach (var item in Model) {
         <tr>
@@ -65,9 +68,40 @@
             </td>
         </tr>
     }
-    
-    </table>
-@Html.ActionLink("Home", "../Home/Index")
+
+    </table>*@
+
+<!--Columns-->
+<div class="row">
+
+    @foreach (var item in Model)
+    {
+        <div class="col-md-3">
+            <div id="columnBorder">
+                @*<p>@Html.DisplayFor(modelItem => item.DepartmentName.DepartmentName)</p>
+
+                <p>@Html.DisplayFor(modelItem => item.Title.TitleDept)</p>*@
+
+                <p>Employee name: @Html.DisplayFor(modelItem => item.EmployeeName)</p>
+
+                @*<p>@Html.DisplayFor(modelItem => item.DateOfHire)</p>*@
+
+                <p>Review date: @Html.DisplayFor(modelItem => item.ReviewDate)</p>
+
+                @*<p>@Html.DisplayFor(modelItem => item.Probation)</p>*@
+
+                <p>Comments: @Html.DisplayFor(modelItem => item.Comments)</p>
+
+                <p>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                </p>
+            </div>
+        </div>
+    }
+</div>
+
 
 
 

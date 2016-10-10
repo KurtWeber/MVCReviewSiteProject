@@ -5,7 +5,10 @@
 }
 
 <h2>Create New Title</h2>
-
+<div>
+    @Html.ActionLink("Back to Title List", "Index") |
+    @Html.ActionLink("Home", "../Home/Index")
+</div>
 
 @using (Html.BeginForm()) 
 {
@@ -30,10 +33,6 @@
         </div>
     </div>
 }
-
-<div>
-    @Html.ActionLink("Back to Title List", "Index")
-</div>
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")

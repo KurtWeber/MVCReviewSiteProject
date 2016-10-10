@@ -16,7 +16,6 @@
 .dl-horizontal dt {
     white-space: normal;
 }
-
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
@@ -45,4 +44,54 @@ input#Comments.form-control.text-box.single-line {
     border-radius: 10px;
     width: auto;
 }
-/*Make some room between image abd Employee Review section*/
+/*Change Navbar color to blue in logo*/
+div.navbar-inverse.navbar-fixed-top {
+    background-color: #429fd7;
+    border-color:#429fd7;
+}
+/*Change Navbar brand to black*/
+.navbar-inverse .navbar-brand {
+    color: black;
+}
+/*Change Navbar Home, About, and Contact to black*/
+.navbar-inverse .navbar-nav > li > a {
+    color: black;
+}
+/*Change the color and thickness of the <hr/> footer line*/
+#footerLine {
+    border-bottom: groove; 
+    border-color: #429fd7;
+}
+/*WeCabCodeIT logo colors*/
+#spanOne {
+    /*We*/
+    color: #d8005c;
+}
+#spanTwo {
+    /*Can*/
+    color: #50B735;
+}
+#spanThree {
+    /*{Code}*/
+    color: #429fd7;
+}
+#spanFour {
+    /*IT*/
+    color: #f15d00;
+}
+/*Font change in footer*/
+#fontChange {
+     font-family: Century Gothic;
+}
+#dateRight {
+    margin:15px;
+    float: right;
+}
+/*Border around column items*/
+#columnBorder {
+    border: 1px solid;
+    border-color: black;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 10px;
+}
